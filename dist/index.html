@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="https://gizzaprogger.github.io/project_chicaga/css/style.css?ver=1621411803">
 	<link rel="stylesheet" href="https://gizzaprogger.github.io/project_chicaga/css/additional.css">
 	<link rel="stylesheet" href="https://cdn.skypack.dev/@frsource/tiny-carousel-core/dist/index.css"> <link href="main.css" rel="stylesheet"></head>
-
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <body class="body">
 	<div class="div-body" data-anchor="up">
 		<div class="section-header">
@@ -232,7 +232,7 @@
 								</div>
 							</div>
 							<div class="block-button-video">
-								<a href="#" class="video_link w-inline-block pulse" data-open-modal="video" data-set-video="http://techslides.com/demos/sample-videos/small.mp4"></a>
+								<a href="#" class="video_link w-inline-block pulse" data-open-modal="video" data-set-video="/src/assets/video.mov"></a>
 								<div class="text-video_link">Узнайте, почему
 									<br>вы <strong>заговорите <br>на английском в CHICAGA</strong></div>
 							</div>
@@ -750,7 +750,7 @@
 					<div class="div-block-audi">
 						<div class="text-block-audi"><span class="rad-text">“</span> What we learn with pleasure we never forget <span class="hint-question" data-tip="Мы никогда не забудем то,<br>что выучили с удовольствием.<br><br>Альфред Мерсье<br>Поэт">?</span>
 							<br><span class="alfred">Alfred Mercier</span></div>
-						<a href="#" data-play-sound="https://ccrma.stanford.edu/~jos/mp3/JazzTrio.mp3" class="link-block-audi w-inline-block"></a>
+						<span href="#" data-play-sound="/src/assets/audios/quote.wav" class="link-block-audi w-inline-block"></span>
 					</div>
 					<div class="div-block-logo_page">
 						<div class="text-logo_page">Зажигательные преподаватели</div><img src="https://gizzaprogger.github.io/project_chicaga/images/6076ce6f8c5650e57e3cd066_Layer2043402x.png" loading="lazy" alt="Лого - CHICAGA" class="image_logo"></div>
@@ -877,7 +877,7 @@
 								<div>Модуль 3
 									<br><strong>Listening</strong></div>
 							</a>
-							<a data-w-tab="Tab 4" class="tab-link-modules-icon w-inline-block w-tab-link">
+							<a data-w-tab="Tab 4" class="tab-link-modules-icon tab-link-modules w-inline-block w-tab-link">
 								<div><strong>Секретный <br>модуль</strong></div>
 							</a>
 							<a data-w-tab="Tab 5" class="tab-link-modules w-inline-block w-tab-link">
@@ -934,6 +934,30 @@
 						</div>
 					</div>
 					<h3 class="result">Ваш результат модуля 1</h3>
+					<div class="div-relativ_rezult div-relativ_rezult--active">
+						<div class="div-rezult">
+							<div class="div-block-rezult">
+								<ul role="list" class="list-result">
+									<li class="list-item_rezult">
+										<div class="text-list_result"><strong class="text-extra-bold">Правильно употребляете 10 базовых глаголов </strong>
+											<br>(например: talk, watch, wait) в прошедшем времени</div>
+									</li>
+									<li class="list-item_rezult">
+										<div class="text-list_result"><strong class="text-extra-bold">Умеете говорить простыми предложениями </strong>
+											<br>с этими глаголами</div>
+									</li>
+								</ul>
+								<div class="div-block-gregory"><img src="https://gizzaprogger.github.io/project_chicaga/images/607c86580b3e0a800914e71c_gregory.jpg" loading="lazy" alt="Gregory" class="gregory">
+									<div>
+										<div class="name_gregory">Григорий Григорьев</div>
+										<div class="text_gregory">На занятиях мне больше всего нравится разминка. Мы делимся впечатлениями о том, у кого что произошло в жизни с момента прошлого урока</div>
+									</div>
+								</div>
+							</div>
+							<div class="div-block-button"><a href="/#zayavka_form" class="button-moduls w-button" data-menuanchor="zayavka_form">супер! хочу попробовать</a><a href="" class="link-next-moduls">Смотреть следующий модуль</a></div>
+						</div>
+						<div class="block-rad-moduls"></div>
+					</div>
 					<div class="div-relativ_rezult">
 						<div class="div-rezult">
 							<div class="div-block-rezult">
@@ -954,7 +978,127 @@
 									</div>
 								</div>
 							</div>
-							<div class="div-block-button"><a href="/#zayavka_form" class="button-moduls w-button" data-menuanchor="zayavka_form">супер! хочу попробовать</a><a href="#" class="link-next-moduls">Смотреть следующий модуль</a></div>
+							<div class="div-block-button"><a href="/#zayavka_form" class="button-moduls w-button" data-menuanchor="zayavka_form">супер! хочу попробовать</a><a href="" class="link-next-moduls">Смотреть следующий модуль</a></div>
+						</div>
+						<div class="block-rad-moduls"></div>
+					</div>
+					<div class="div-relativ_rezult">
+						<div class="div-rezult">
+							<div class="div-block-rezult">
+								<ul role="list" class="list-result">
+									<li class="list-item_rezult">
+										<div class="text-list_result"><strong class="text-extra-bold">Правильно употребляете 10 базовых глаголов </strong>
+											<br>(например: talk, watch, wait) в прошедшем времени</div>
+									</li>
+									<li class="list-item_rezult">
+										<div class="text-list_result"><strong class="text-extra-bold">Умеете говорить простыми предложениями </strong>
+											<br>с этими глаголами</div>
+									</li>
+								</ul>
+								<div class="div-block-gregory"><img src="https://gizzaprogger.github.io/project_chicaga/images/607c86580b3e0a800914e71c_gregory.jpg" loading="lazy" alt="Gregory" class="gregory">
+									<div>
+										<div class="name_gregory">Григорий Григорьев</div>
+										<div class="text_gregory">На занятиях мне больше всего нравится разминка. Мы делимся впечатлениями о том, у кого что произошло в жизни с момента прошлого урока</div>
+									</div>
+								</div>
+							</div>
+							<div class="div-block-button"><a href="/#zayavka_form" class="button-moduls w-button" data-menuanchor="zayavka_form">супер! хочу попробовать</a><a href="" class="link-next-moduls">Смотреть следующий модуль</a></div>
+						</div>
+						<div class="block-rad-moduls"></div>
+					</div>
+					<div class="div-relativ_rezult">
+						<div class="div-rezult">
+							<div class="div-block-rezult">
+								<ul role="list" class="list-result">
+									<li class="list-item_rezult">
+										<div class="text-list_result"><strong class="text-extra-bold">Правильно употребляете 10 базовых глаголов </strong>
+											<br>(например: talk, watch, wait) в прошедшем времени</div>
+									</li>
+									<li class="list-item_rezult">
+										<div class="text-list_result"><strong class="text-extra-bold">Умеете говорить простыми предложениями </strong>
+											<br>с этими глаголами</div>
+									</li>
+								</ul>
+								<div class="div-block-gregory"><img src="https://gizzaprogger.github.io/project_chicaga/images/607c86580b3e0a800914e71c_gregory.jpg" loading="lazy" alt="Gregory" class="gregory">
+									<div>
+										<div class="name_gregory">Григорий Григорьев</div>
+										<div class="text_gregory">На занятиях мне больше всего нравится разминка. Мы делимся впечатлениями о том, у кого что произошло в жизни с момента прошлого урока</div>
+									</div>
+								</div>
+							</div>
+							<div class="div-block-button"><a href="/#zayavka_form" class="button-moduls w-button" data-menuanchor="zayavka_form">супер! хочу попробовать</a><a href="" class="link-next-moduls">Смотреть следующий модуль</a></div>
+						</div>
+						<div class="block-rad-moduls"></div>
+					</div>
+					<div class="div-relativ_rezult">
+						<div class="div-rezult">
+							<div class="div-block-rezult">
+								<ul role="list" class="list-result">
+									<li class="list-item_rezult">
+										<div class="text-list_result"><strong class="text-extra-bold">Правильно употребляете 10 базовых глаголов </strong>
+											<br>(например: talk, watch, wait) в прошедшем времени</div>
+									</li>
+									<li class="list-item_rezult">
+										<div class="text-list_result"><strong class="text-extra-bold">Умеете говорить простыми предложениями </strong>
+											<br>с этими глаголами</div>
+									</li>
+								</ul>
+								<div class="div-block-gregory"><img src="https://gizzaprogger.github.io/project_chicaga/images/607c86580b3e0a800914e71c_gregory.jpg" loading="lazy" alt="Gregory" class="gregory">
+									<div>
+										<div class="name_gregory">Григорий Григорьев</div>
+										<div class="text_gregory">На занятиях мне больше всего нравится разминка. Мы делимся впечатлениями о том, у кого что произошло в жизни с момента прошлого урока</div>
+									</div>
+								</div>
+							</div>
+							<div class="div-block-button"><a href="/#zayavka_form" class="button-moduls w-button" data-menuanchor="zayavka_form">супер! хочу попробовать</a><a href="" class="link-next-moduls">Смотреть следующий модуль</a></div>
+						</div>
+						<div class="block-rad-moduls"></div>
+					</div>
+					<div class="div-relativ_rezult">
+						<div class="div-rezult">
+							<div class="div-block-rezult">
+								<ul role="list" class="list-result">
+									<li class="list-item_rezult">
+										<div class="text-list_result"><strong class="text-extra-bold">Правильно употребляете 10 базовых глаголов </strong>
+											<br>(например: talk, watch, wait) в прошедшем времени</div>
+									</li>
+									<li class="list-item_rezult">
+										<div class="text-list_result"><strong class="text-extra-bold">Умеете говорить простыми предложениями </strong>
+											<br>с этими глаголами</div>
+									</li>
+								</ul>
+								<div class="div-block-gregory"><img src="https://gizzaprogger.github.io/project_chicaga/images/607c86580b3e0a800914e71c_gregory.jpg" loading="lazy" alt="Gregory" class="gregory">
+									<div>
+										<div class="name_gregory">Григорий Григорьев</div>
+										<div class="text_gregory">На занятиях мне больше всего нравится разминка. Мы делимся впечатлениями о том, у кого что произошло в жизни с момента прошлого урока</div>
+									</div>
+								</div>
+							</div>
+							<div class="div-block-button"><a href="/#zayavka_form" class="button-moduls w-button" data-menuanchor="zayavka_form">супер! хочу попробовать</a><a href="" class="link-next-moduls">Смотреть следующий модуль</a></div>
+						</div>
+						<div class="block-rad-moduls"></div>
+					</div>
+					<div class="div-relativ_rezult">
+						<div class="div-rezult">
+							<div class="div-block-rezult">
+								<ul role="list" class="list-result">
+									<li class="list-item_rezult">
+										<div class="text-list_result"><strong class="text-extra-bold">Правильно употребляете 10 базовых глаголов </strong>
+											<br>(например: talk, watch, wait) в прошедшем времени</div>
+									</li>
+									<li class="list-item_rezult">
+										<div class="text-list_result"><strong class="text-extra-bold">Умеете говорить простыми предложениями </strong>
+											<br>с этими глаголами</div>
+									</li>
+								</ul>
+								<div class="div-block-gregory"><img src="https://gizzaprogger.github.io/project_chicaga/images/607c86580b3e0a800914e71c_gregory.jpg" loading="lazy" alt="Gregory" class="gregory">
+									<div>
+										<div class="name_gregory">Григорий Григорьев</div>
+										<div class="text_gregory">На занятиях мне больше всего нравится разминка. Мы делимся впечатлениями о том, у кого что произошло в жизни с момента прошлого урока</div>
+									</div>
+								</div>
+							</div>
+							<div class="div-block-button"><a href="/#zayavka_form" class="button-moduls w-button" data-menuanchor="zayavka_form">супер! хочу попробовать</a><a href="" class="link-next-moduls">Смотреть следующий модуль</a></div>
 						</div>
 						<div class="block-rad-moduls"></div>
 					</div>
@@ -1001,7 +1145,7 @@
 							<div class="title_form">Оставьте заявку
 								<br>на 3 бесплатных пробных  занятия</div>
 							<div class="form_sait w-form">
-								<form id="email-form-2" name="email-form-2" data-name="Email Form 2">
+								<form id="email-form-2" name="email-form-2" data-name="Email Form 2" data-redirect-to="vk.com">
 									<label for="node" class="field-label-wait">Как к вам обращаться?</label>
 									<input required type="text" maxlength="256" data-name="Имя" placeholder="Имя" id="node" class="pole-form w-input">
 									<label for="node-2" class="field-label-wait">Введите телефон</label>
@@ -1082,7 +1226,7 @@
 									<br>тестом, фирменными
 									<br>сладостями и ручкой
 									<br>CHICAGA</div>
-								<a href="#" data-open-modal="video" data-set-video="http://techslides.com/demos/sample-videos/small.mp4" class="pulse video_link_chicaga w-inline-block"></a>
+								<a href="#" data-open-modal="video" data-set-video="/src/assets/video.mov" class="pulse video_link_chicaga w-inline-block"></a>
 							</div><img src="https://gizzaprogger.github.io/project_chicaga/images/607dbdc502e70f1f54985b48_CHICAGA_box.png" loading="lazy" alt="" class="box_dogovor"></div>
 					</div>
 				</div>
@@ -1216,7 +1360,7 @@
 									<div class="knowledge-indicators">
 										<div class="effect">Уверенное владение языком</div>
 										<div class="knowledge">ЗНАНИЯ</div>
-									</div><img src="https://gizzaprogger.github.io/project_chicaga/images/60995a3c96c1d2c8a4bdda5c_Layer2021.png" loading="lazy" sizes="(max-width: 479px) 100vw, 600.9896240234375px" srcset="https://gizzaprogger.github.io/project_chicaga/images/60995a3c96c1d2c8a4bdda5c_Layer2021-p-500.png 500w,https://gizzaprogger.github.io/project_chicaga/images/60995a3c96c1d2c8a4bdda5c_Layer2021.png 601w" alt="" class="chart">
+									</div><img src="https://gizzaprogger.github.io/project_chicaga/images/60995a3c96c1d2c8a4bdda5c_Layer2021.png" loading="lazy" sizes="(max-width: 479px) 100vw, 600.9896240234375px" srcset="https://gizzaprogger.github.io/project_chicaga/images/60995a3c96c1d2c8a4bdda5c_Layer2021-p-500.png 500w, https://gizzaprogger.github.io/project_chicaga/images/60995a3c96c1d2c8a4bdda5c_Layer2021.png 601w" alt="" class="chart">
 									<div data-w-id="072ff3dc-92e2-db29-6a33-59dcbc0b6ea5" class="intaraction_chart"></div>
 								</div>
 								<div class="div-block-call-to-action">
@@ -1299,7 +1443,7 @@
 						<h3 class="heading3_zentr space"><strong class="bold-heading_katya">Вдохновляющий дизайн – так модно и уютно,  </strong><br>что я с радостью прихожу сюда снова и снова!</h3> </div>
 					<div class="block-katya_fisher">
 						<div class="block-foto"><img src="https://gizzaprogger.github.io/project_chicaga/images/607edec8bf48ff657f2c1bbb_katya.jpg" loading="lazy" alt="">
-							<a href="#" class="link-video w-inline-block" data-open-modal="video" data-set-video="http://techslides.com/demos/sample-videos/small.mp4"></a>
+							<a href="#" class="link-video w-inline-block" data-open-modal="video" data-set-video="/src/assets/video.mov"></a>
 						</div>
 						<div class="block-info-katya">
 							<div class="div-name_social"><img src="https://gizzaprogger.github.io/project_chicaga/images/607edf9cd4edd26d8c51e39f_stylist.png" loading="lazy" alt="">
@@ -1503,8 +1647,8 @@
 												<h3 class="heading3_zentr left">Стала понимать друзей-иностранцев<br>и в шоке от преподавателя:)</h3> </div>
 										</div>
 										<div class="div-otziv">
-											<div class="div-user" data-open-modal="video" data-set-video="http://techslides.com/demos/sample-videos/small.mp4"><img src="https://gizzaprogger.github.io/project_chicaga/images/60633878f80d4233878ef91f_Layer20118.jpg" loading="lazy" alt="Валерия Гусаковская" class="foto_user">
-												<a href="#" class="link-block _2 w-inline-block pulse"></a>
+											<div class="div-user player"><video src="/src/assets/video.mov" controls poster="https://gizzaprogger.github.io/project_chicaga/images/60633878f80d4233878ef91f_Layer20118.jpg" loading="lazy" alt="Валерия Гусаковская" class="foto_user"></video>
+												<a href="#" class="link-block _2 w-inline-block pulse play-pause"></a>
 											</div>
 											<div class="content-scroll_wrapper-2">
 												<div>
@@ -1595,7 +1739,7 @@
 									<div class="div-pole-form">
 										<label for="node" class="field-label">Здравствуйте! <strong>Меня зовут</strong>
 											<br><span class="text-span-form">Hello, my name is</span></label>
-										<input type="text" class="text-field w-input" maxlength="256" data-name="Имя" placeholder="Имя" id="name">
+										<input required type="text" class="text-field w-input" maxlength="256" data-name="Имя" placeholder="Имя" id="name">
 									</div>
 									<label for="email" class="field-label _2"><strong>Хочу записаться на 3 бесплатных пробных занятия</strong>
 										<br><span class="text-span-form">I would like to sign up for 3 free trial lessons</span></label>
@@ -1603,14 +1747,18 @@
 										<label for="node-2" class="field-label _3"><strong>в школе CHICAGA</strong>
 											<br><span class="text-span-form">at CHICAGA school</span></label>
 										<select id="shckol" data-name="Школа" class="select-field w-select">
-											<option value="Выберите школу">Выберите школу</option>
-											<option value="1">1</option>
+											<option value="Школа в Купчино">Школа в Купчино</option>
+											<option value="Школа на Ленинском">Школа на Ленинском</option>
+											<option value="Школа на Академической">Школа на Академической</option>
+											<option value="Школа на Звездной">Школа на Звездной</option>
+											<option value="Школа на Ладожской/Большевиков">Школа на Ладожской/Большевиков</option>
+											<option value="Школа в Озерках">Школа в Озерках</option>
 										</select>
 									</div>
 									<div class="div-pole-form-dop _3">
 										<label for="node-3" class="field-label"><strong>Мой телефон</strong>
 											<br><span class="text-span-form">My phone number</span></label>
-										<input type="tel" maxlength="256" data-name="Телефон" placeholder="Телефон" id="phone" class="phone-field w-input">
+										<input required type="tel" maxlength="256" data-name="Телефон" placeholder="Телефон" id="phone" class="phone-field w-input">
 									</div>
 									<div class="div-calendar">
 										<div class="div-pole-form calendar">
@@ -1626,10 +1774,10 @@
 									</div>
 									<div class="div-podpiska">
 										<label class="w-checkbox checkbox-field">
-											<input type="checkbox" id="checkbox" name="checkbox" data-name="Checkbox" class="w-checkbox-input checkbox"><span class="checkbox-label w-form-label"><strong>Хочу получить открытку CHICAGA на e-mail </strong><span class="hint-question-form" data-tip="Напишите ваш e-mail, и мы отправим<br>вам эту волшебную открытку:)">?</span></span>
+											<input required type="checkbox" id="checkbox" name="checkbox" data-name="Checkbox" class="w-checkbox-input checkbox"><span class="checkbox-label w-form-label"><strong>Хочу получить открытку CHICAGA на e-mail </strong><span class="hint-question-form" data-tip="Напишите ваш e-mail, и мы отправим<br>вам эту волшебную открытку:)">?</span></span>
 										</label>
 										<div class="text-block-podpiska">I'd like to get a CHICAGA card by e-mail</div>
-										<input type="email" class="text-field-mail w-input" maxlength="256" name="Email" data-name="Email" placeholder="Введите e-mail" id="Email">
+										<input required type="email" class="text-field-mail w-input" maxlength="256" name="Email" data-name="Email" placeholder="Введите e-mail" id="Email">
 									</div>
 									<div class="div-button">
 										<input type="submit" value="записаться на 3 бесплатных пробных занятия" data-wait="Please wait..." class="button-form w-button">
@@ -1969,7 +2117,7 @@
 								<div class="div-info-user">
 									<div class="lifestyle"></div>
 									<div class="lifestyle _2"></div>
-								</div><a href="/#zayavka_form" class="button style w-button" data-menuanchor="zayavka_form">Хочу английский <br>с комфортом</a></div>
+								</div><a href="#zayavka_form" class="button style w-button" data-menuanchor="zayavka_form">Хочу английский <br>с комфортом</a></div>
 							<div class="block-rad-mini"></div>
 						</div>
 						<div class="wrapper">
@@ -2098,9 +2246,9 @@
 										<label for="node-3" class="field-label-wait">Как к вам обращаться?</label>
 										<div class="text_online">есть онлайн!</div>
 									</div>
-									<input type="text" class="pole-form w-input" maxlength="256" data-name="Имя" placeholder="Имя" id="node" required>
+									<input required type="text" class="pole-form w-input" maxlength="256" data-name="Имя" placeholder="Имя" id="node" required>
 									<label for="node-3" class="field-label-wait">Введите телефон</label>
-									<input type="tel" class="pole-form w-input" maxlength="256" data-name="Телефон" placeholder="Телефон" id="node-2" required="">
+									<input required type="tel" class="pole-form w-input" maxlength="256" data-name="Телефон" placeholder="Телефон" id="node-2" required="">
 									<label for="name-2" class="field-label-wait">Выберите школу</label>
 									<select id="field-3" name="field-3" data-name="Field 3" class="pole-form w-select">
 										<option value="Школа на Академической">Школа на Академической</option>
@@ -2142,7 +2290,7 @@
 							<div class="form_lbock w-form">
 								<form id="email-form-2" name="email-form-2" data-name="Email Form 2">
 									<label for="node-3" class="field-label-lbock_form">Как к вам обращаться?</label>
-									<input type="text" maxlength="256" data-name="Имя" placeholder="Имя" id="node" class="pole-form lbock w-input">
+									<input required type="text" maxlength="256" data-name="Имя" placeholder="Имя" id="node" class="pole-form lbock w-input">
 									<label for="node-3" class="field-label-lbock_form">Напишите ваш вопрос</label>
 									<textarea placeholder="Посоветуйте, какой курс выбрать, чтобы пройти собеседование в иностранной компании" maxlength="5000" id="field-6" name="field-6" class="pole-form fac w-input"></textarea>
 									<label for="name-2" class="field-label-lbock_form">Как вам удобно получить ответ?</label>
@@ -2151,7 +2299,7 @@
 											<option value="WhatsApp">WhatsApp</option>
 											<option value="1">1</option>
 										</select>
-										<input type="tel" class="pole-form lbock dop phon w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Введите телефон" id="field-2">
+										<input required type="tel" class="pole-form lbock dop phon w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Введите телефон" id="field-2">
 									</div>
 									<input type="submit" value="задать вопрос" data-wait="Please wait..." class="button-lbock_form w-button">
 									<div class="text-info_form zentr">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь
@@ -2220,9 +2368,9 @@
 							<div class="form_lbock_gray w-form">
 								<form id="email-form-2" name="email-form-2" data-name="Email Form 2">
 									<label for="node-3" class="field-label-wait">Как к вам обращаться?</label>
-									<input type="text" maxlength="256" data-name="Имя" placeholder="Имя" id="node" class="pole-form lbock w-input">
+									<input required type="text" maxlength="256" data-name="Имя" placeholder="Имя" id="node" class="pole-form lbock w-input">
 									<label for="node-3" class="field-label-wait">Введите телефон</label>
-									<input type="tel" maxlength="256" data-name="Телефон" placeholder="Телефон" id="node-2" class="pole-form lbock w-input">
+									<input required type="tel" maxlength="256" data-name="Телефон" placeholder="Телефон" id="node-2" class="pole-form lbock w-input">
 									<label for="name-2" class="field-label-wait">Выберите школу</label>
 									<select id="field-8" name="field-8" data-name="Field 8" class="pole-form lbock w-select">
 										<option value="Школа на Академической">Школа на Академической</option>
@@ -2233,14 +2381,14 @@
 										<div class="tabs-checkbox-lbock_form">
 											<div class="tab-link-form_lbock">
 												<label class="radio-button-field w-radio">
-													<input type="radio" data-name="Radio" name="radio" value="Radio" class="w-form-formradioinput radio-button w-radio-input" data-ix="clous-time">
+													<input required type="radio" data-name="Radio" name="radio" value="Radio" class="w-form-formradioinput radio-button w-radio-input" data-ix="clous-time">
 													<div class="div-block-dynamic">
 														<div>Сейчас</div>
 													</div><span class="radio-button-label w-form-label">Сейчас</span></label>
 											</div>
 											<div class="tab-link-form_lbock">
 												<label class="radio-button-field w-radio">
-													<input type="radio" data-name="Radio 3" name="radio" value="Radio 2" id="Radio -3" class="w-form-formradioinput radio-button w-radio-input" data-ix="open-time">
+													<input required type="radio" data-name="Radio 3" name="radio" value="Radio 2" id="Radio -3" class="w-form-formradioinput radio-button w-radio-input" data-ix="open-time">
 													<div class="div-block-dynamic-2">
 														<div>По времени</div>
 													</div><span for="Radio -3" class="radio-button-label w-form-label">По времени</span></label>
@@ -2248,7 +2396,7 @@
 										</div>
 										<div class="div-block-tab">
 											<label for="name-2" class="field-label-lbock_form">Когда вам удобно принять звонок?</label>
-											<input type="text" class="pole-form lbock w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Например, в понедельник в 19:00" id="field-2">
+											<input required type="text" class="pole-form lbock w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Например, в понедельник в 19:00" id="field-2">
 											<label for="name-2" class="field-label-lbock_form">Мы рады связаться с вами:
 												<br><strong>пн – чт:</strong> 12:00 – 22:00, <strong>сб – вс:</strong> 11:3</label>
 										</div>
@@ -2318,22 +2466,22 @@
 							<div class="form_lbock_gray w-form">
 								<form id="email-form-2" name="email-form-2" data-name="Email Form 2">
 									<label for="node-3" class="field-label-wait">Как к вам обращаться?</label>
-									<input type="text" maxlength="256" data-name="Имя" placeholder="Имя" id="node" class="pole-form lbock w-input">
+									<input required type="text" maxlength="256" data-name="Имя" placeholder="Имя" id="node" class="pole-form lbock w-input">
 									<label for="node-3" class="field-label-wait">Введите телефон</label>
-									<input type="tel" maxlength="256" data-name="Телефон" placeholder="Телефон" id="node-2" class="pole-form lbock w-input">
+									<input required type="tel" maxlength="256" data-name="Телефон" placeholder="Телефон" id="node-2" class="pole-form lbock w-input">
 									<label for="name-2" class="field-label-wait">Когда позвонить?</label>
 									<div>
 										<div class="tabs-checkbox-lbock_form">
 											<div class="tab-link-form_lbock">
 												<label class="radio-button-field w-radio">
-													<input type="radio" data-name="Radio" name="radio" value="Radio" class="w-form-formradioinput radio-button w-radio-input" data-ix="clous-time">
+													<input required type="radio" data-name="Radio" name="radio" value="Radio" class="w-form-formradioinput radio-button w-radio-input" data-ix="clous-time">
 													<div class="div-block-dynamic">
 														<div>Сейчас</div>
 													</div><span class="radio-button-label w-form-label">Сейчас</span></label>
 											</div>
 											<div class="tab-link-form_lbock">
 												<label class="radio-button-field w-radio">
-													<input type="radio" data-name="Radio 4" name="radio" value="Radio 2" id="Radio -4" class="w-form-formradioinput radio-button w-radio-input" data-ix="open-time">
+													<input required type="radio" data-name="Radio 4" name="radio" value="Radio 2" id="Radio -4" class="w-form-formradioinput radio-button w-radio-input" data-ix="open-time">
 													<div class="div-block-dynamic-2">
 														<div>По времени</div>
 													</div><span for="Radio -4" class="radio-button-label w-form-label">По времени</span></label>
@@ -2341,7 +2489,7 @@
 										</div>
 										<div class="div-block-tab">
 											<label for="name-2" class="field-label-lbock_form">Когда вам удобно принять звонок?</label>
-											<input type="text" class="pole-form lbock w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Например, в понедельник в 19:00" id="field-2">
+											<input required type="text" class="pole-form lbock w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Например, в понедельник в 19:00" id="field-2">
 											<label for="name-2" class="field-label-lbock_form">Мы рады связаться с вами:
 												<br><strong>пн – чт:</strong> 12:00 – 22:00, <strong>сб – вс:</strong> 11:3</label>
 										</div>
@@ -2422,7 +2570,7 @@
 								</div>
 								<div>
 									<label for="node-3" class="field-label-wait">Введите e-mail</label>
-									<input type="email" class="pole-form w-input" maxlength="256" name="field-5" data-name="Field 5" placeholder="hello@mail.com" id="field-5" required="">
+									<input required type="email" class="pole-form w-input" maxlength="256" name="field-5" data-name="Field 5" placeholder="hello@mail.com" id="field-5" required="">
 									<div class="button-test_form">
 										<div class="text-form_button">получить PDF с 15 советами и секретный подарок</div>
 										<input type="submit" value="" data-wait="Please wait..." class="submit-button w-button"><img src="https://gizzaprogger.github.io/project_chicaga/images/607d62634b263d4791390062_gift.png" loading="lazy" alt="gift" class="gift"></div>
@@ -2441,9 +2589,9 @@
 			<div class="lbock_window">
 				<div class="block-lbock_form">
 					<div>
-						<div class="block-lbock_video">
-							<video src="" style="display: block; width: 553px; height: 409px;"></video>
-							<a href="#" class="pulse link-video-lbock w-inline-block"></a>
+						<div class="block-lbock_video player">
+							<video controls src="" style="display: block; width: 553px; height: 409px;"></video>
+							<a href="#" class="pulse link-video-lbock play-pause w-inline-block"></a>
 						</div>
 						<div class="info-block">
 							<div class="text-info-block">Вы узнаете за 2 минуты:</div>
@@ -2464,9 +2612,9 @@
 						<div class="form_sait w-form">
 							<form id="email-form-2" name="email-form-2" data-name="Email Form 2">
 								<label for="node-3" class="field-label-wait">Как к вам обращаться?</label>
-								<input type="text" maxlength="256" data-name="Имя" placeholder="Имя" id="node" class="pole-form w-input">
+								<input required type="text" maxlength="256" data-name="Имя" placeholder="Имя" id="node" class="pole-form w-input">
 								<label for="node-3" class="field-label-wait">Введите телефон</label>
-								<input type="tel" maxlength="256" data-name="Телефон" placeholder="Телефон" id="node-2" class="pole-form w-input">
+								<input required type="tel" maxlength="256" data-name="Телефон" placeholder="Телефон" id="node-2" class="pole-form w-input">
 								<label for="name-2" class="field-label-wait">Выберите школу</label>
 								<select id="field-3" name="field-3" data-name="Field 3" class="pole-form w-select">
 									<option value="Школа на Академической">Школа на Академической</option>
@@ -2504,7 +2652,7 @@
 						<div class="title_form-lbock-regular"><strong>Введите e-mail</strong> и получите PDF с советами прямо сейчас. Бесплатно.</div>
 						<div class="form_sait exit w-form">
 							<form id="email-form-2" name="email-form-2" data-name="Email Form 2">
-								<input type="email" maxlength="256" data-name="Почта" placeholder=" hello@mail.com" id="node-3" class="pole-form w-input">
+								<input required type="email" maxlength="256" data-name="Почта" placeholder=" hello@mail.com" id="node-3" class="pole-form w-input">
 								<div style="display: flex">
 									<button class="button-form-popup-exit w-button">получить PDF на e-mail (1mb)</button>
 									<button class="button-form-popup button-form-popup-exit w-button">
@@ -2586,22 +2734,22 @@
 						<div class="form_lbock w-form">
 							<form id="email-form-2" name="email-form-2" data-name="Email Form 2">
 								<label for="node-4" class="field-label-lbock_form">Как к вам обращаться?</label>
-								<input type="text" maxlength="256" data-name="Имя" placeholder="Имя" id="node" class="pole-form lbock w-input">
-								<label for="node-4" class="field-label-lbock_form">Введите телефон</label>
-								<input type="tel" maxlength="256" data-name="Телефон" placeholder="Телефон" id="node-2" class="pole-form lbock w-input">
+								<input required type="text" maxlength="256" data-name="Имя" placeholder="Имя" id="node" class="pole-form lbock w-input">
+								<label required for="node-4" class="field-label-lbock_form">Введите телефон</label>
+								<input required type="tel" maxlength="256" data-name="Телефон" placeholder="Телефон" id="node-2" class="pole-form lbock w-input">
 								<label for="name-2" class="field-label-lbock_form">Когда позвонить?</label>
 								<div>
 									<div class="tabs-checkbox-lbock_form">
 										<div class="tab-link-form_lbock">
 											<label class="radio-button-field w-radio">
-												<input type="radio" data-name="Radio" name="radio" value="Radio" class="w-form-formradioinput radio-button w-radio-input" data-ix="clous-time">
+												<input required type="radio" data-name="Radio" name="radio" value="Radio" class="w-form-formradioinput radio-button w-radio-input" data-ix="clous-time">
 												<div class="div-block-dynamic">
 													<div>Сейчас</div>
 												</div><span class="radio-button-label w-form-label">Сейчас</span></label>
 										</div>
 										<div class="tab-link-form_lbock">
 											<label class="radio-button-field w-radio">
-												<input type="radio" data-name="Radio 5" name="radio" value="Radio 2" id="Radio -5" class="w-form-formradioinput radio-button w-radio-input" data-ix="open-time">
+												<input required type="radio" data-name="Radio 5" name="radio" value="Radio 2" id="Radio -5" class="w-form-formradioinput radio-button w-radio-input" data-ix="open-time">
 												<div class="div-block-dynamic-2">
 													<div>По времени</div>
 												</div><span for="Radio -5" class="radio-button-label w-form-label">По времени</span></label>
@@ -2609,7 +2757,7 @@
 									</div>
 									<div class="div-block-tab">
 										<label for="name-2" class="field-label-lbock_form">Когда вам удобно принять звонок?</label>
-										<input type="text" class="pole-form lbock w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Например, в понедельник в 19:00" id="field-2">
+										<input required type="text" class="pole-form lbock w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Например, в понедельник в 19:00" id="field-2">
 										<label for="name-2" class="field-label-lbock_form">Мы рады связаться с вами:
 											<br><strong>пн – чт:</strong> 12:00 – 22:00, <strong>сб – вс:</strong> 11:3</label>
 									</div>
@@ -2644,7 +2792,7 @@
 									<h3 class="heading3_zentr left" aria-hidden="true">Стала понимать друзей-иностранцев<br aria-hidden="true">и в шоке от преподавателя:)</h3> </div>
 							</div>
 							<div class="div-otziv" aria-hidden="true">
-								<div class="div-user" data-open-modal="video" data-set-video="http://techslides.com/demos/sample-videos/small.mp4" aria-hidden="true"><img src="https://gizzaprogger.github.io/project_chicaga/images/60633878f80d4233878ef91f_Layer20118.jpg" loading="lazy" alt="Валерия Гусаковская" class="foto_user" aria-hidden="true">
+								<div class="div-user" data-open-modal="video" data-set-video="/src/assets/video.mov" aria-hidden="true"><img src="https://gizzaprogger.github.io/project_chicaga/images/60633878f80d4233878ef91f_Layer20118.jpg" loading="lazy" alt="Валерия Гусаковская" class="foto_user" aria-hidden="true">
 									<a href="#" class="link-block _2 w-inline-block pulse" tabindex="-1" aria-hidden="true"></a>
 								</div>
 								<div class="content-scroll_wrapper-2" aria-hidden="true">
