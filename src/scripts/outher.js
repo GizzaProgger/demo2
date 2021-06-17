@@ -36,6 +36,7 @@ export default () => {
       document.querySelector("#time").insertAdjacentHTML("beforeend", `<option ${time.selected} value="${time.value}">${time.value}</option>`);
     });
   }
+  
   function generateArrOptionFromWorkTime(start, end) {
     let res = [];
     let i = 0;
