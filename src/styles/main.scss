@@ -1,0 +1,18 @@
+// @import 'vendor/index';
+// @import 'mixins/index';
+// @import 'common/index';
+// @import 'modules/index';
+
+[data-play-sound] {
+  cursor: pointer;
+}
+.div-relativ_rezult {
+  display: none;
+}
+.div-relativ_rezult--active {
+  display: block;
+}
+.lbock_window-manager {
+  max-height: 95vh;
+  overflow: auto;
+}
