@@ -45,18 +45,11 @@ document.addEventListener("DOMContentLoaded", () => {
   //   }
   // })
 
-  document.querySelectorAll(".link-next-moduls").forEach(el => {
-    el.addEventListener("click", e => {
-      e.preventDefault();
-      let i = getSlideIndex(".tabs-menu-modules .w--current", ".tab-link-modules", "next")
-      document.querySelectorAll(".tab-link-modules")[i].click()
-    })
-  })
 
   document.querySelectorAll(".link-next-moduls").forEach(el => {
     el.addEventListener("click", e => {
       e.preventDefault();
-      let i = getSlideIndex(".tabs-menu-modules .w--current", ".tab-link-modules", "next")
+      let i = getSlideIndex(".tabs-menu-modules .w--current", ".tab-link-modules", "next");
       document.querySelectorAll(".tab-link-modules")[i].click()
     })
   })
@@ -76,6 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (direction == "next") direction = 1
       else direction = numElems - 1
       let i = (direction + getNodeIndex(document.querySelector(activeSelector)) / 2) % numElems;
+      console.log(direction + getNodeIndex(document.querySelector(activeSelector)))
       return i
   }
 
