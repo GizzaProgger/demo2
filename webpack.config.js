@@ -9,10 +9,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jpg$/,
-        loader: "url-loader?mimetype=image/png" 
-      },
-      {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
@@ -29,23 +25,6 @@ module.exports = {
           "html-loader",
           "pug-html-loader"
         ]
-      },
-      {
-        test: /\.html$/,
-        use: [
-        // {
-        //   loader: 'ejs-loader'
-        // },
-        // {
-        //   loader: 'extract-loader'
-        // },
-        {
-          loader: 'html-loader',
-          options: {
-            interpolate: true
-          }
-        }
-      ]
       },
       {
         test: /\.scss$/,
@@ -91,12 +70,6 @@ module.exports = {
     new HtmlWebPackPlugin({
       filename: "./index.html",
       template: path.resolve(__dirname, './src/template/pages/index.html'),
-      title: 'HTML Webpack Plugin',
-      
-    }),
-    new HtmlWebPackPlugin({
-      filename: "./thank-online.html",
-      template: path.resolve(__dirname, './src/template/pages/thank-online.html'),
     }),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output

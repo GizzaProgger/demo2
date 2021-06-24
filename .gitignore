@@ -4,9 +4,7 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-*.mov
-*.mp4
-*.webm
+
 # Runtime data
 pids
 *.pid

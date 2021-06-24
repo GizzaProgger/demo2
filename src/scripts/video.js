@@ -4,42 +4,26 @@ const videoObjFactory = () => {
       if (!document.querySelectorAll("[data-set-video]")) return
       document.querySelectorAll("[data-set-video]").forEach(el => {
         el.addEventListener("click", e => {
-          let selector = el.dataset.selector || ".modal-player video";
-          let video = document.querySelector(selector);
-          if (!video.getAttribute("poster")) video.setAttribute("poster", el.dataset.poster || "");
-          if (video.getAttribute("src") != el.dataset.setVideo) {
-            if (!video.getAttribute("poster")) video.currentTime = 2;
-            video.setAttribute("src", el.dataset.setVideo);
-          }
-          document.querySelector(".modal-player .modal-wrappper").addEventListener("click", e => {
-            if (e.target.classList.contains("modal-wrappper") || e.target.classList.contains("closure_link")) {
-              video.pause();
-            }
-          })
+          console.log(el.dataset.setVideo)
+          document.querySelector(".block-lbock_video video").setAttribute("src", el.dataset.setVideo)
         })
       })
-      let firstClick = true;
       document.querySelectorAll(".player").forEach(container => {
         container.addEventListener("click", e => {
           let media = container.querySelector("video");
-          if (firstClick) {
-            media.currentTime = 0;
-            firstClick = false;
+          if (e.target.tagName.toLowerCase() == "video") {
+            container.querySelector(".play-pause").style.opacity = Number(!media.paused);
+            return
+          };
+          if (media.paused) {
+            container.querySelector(".play-pause").style.opacity = "0";
+            media.play();
+          } else {
+            media.pause();
           }
           media.addEventListener("pause", () => {
             container.querySelector(".play-pause").style.opacity = "1";
           })
-          media.addEventListener("play", () => {
-            container.querySelector(".play-pause").style.opacity = "0";
-          })
-        })
-        container.querySelector(".play-pause").addEventListener("click", () => {
-          let video = container.querySelector("video");
-          if (video.paused) {
-            video.play()
-          } else {
-            video.pause()
-          }
         })
       })
     }

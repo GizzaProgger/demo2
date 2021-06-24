@@ -2078,12 +2078,13 @@
 									<br>E-mail: <span class="mail">ozerki@chicaga.ru</span></div><a href="#" class="link">Увидеть вход и парковку</a></div>
 						</div>
 						<div class="div-map">
-							<div id="map-adult" style="width: 100%;height: 95vh;"></div>
+							<div id="map" style="width: 100%;height: 400%;"></div>
 							<div class="div-block-offer">
 								<div class="text-offer">Все школы не рядом с вами?</div>
 								<div class="subtitle-offer">Попробуйте обучение онлайн в группах
 									<br>от 2 до 6 человек!</div><a href="#" class="button w-button" data-open-modal="modal-16">записаться  на 3 бесплатных<br>пробных занятия онлайн</a></div>
 							<div>
+								<?php if(file_exists('map.htm')) include 'map.htm'; ?>
 							</div>
 						</div>
 					</div>
@@ -2553,50 +2554,31 @@
 									<div class="bar-choice last-step"></div>
 								</div>
 							</div>
-							<div class="gift-block">
-								<div class="title_form-lbock" style="font-size: 19px">Получите ваши подарки <br> прямо сейчас</div>
-								<img style="position: absolute; left: 116px; top: 131px" src="https://gizzaprogger.github.io/project_chicaga/images/60915c1050fbf83b24645063_Adjustments.png" loading="lazy" alt="" class="gift-book">
-								<img style="position: absolute; left: 125px; top: 318px" src="https://gizzaprogger.github.io/project_chicaga/images/609160b3f9f80319055e6fbb_Present.png" loading="lazy" alt="" class="present">
-								<div class="gift-block__text" style="margin-top: 44px;">Гарантированный <br> подарок:</div>
-								<div class="gift-block__text" style="margin-top: 39px;">
-									Топ-5 советов <br>
-									«Как научиться понимать <br>
-									фильмы на английском» <br>
-								</div>
-								<div class="gift-block__text" style="margin-top: 20px; margin-bottom: 13px; font-size: 19px; text-align: center;">+</div>
-								<div class="gift-block__text">Бонус:</div>
-								<div class="gift-block__text" style="margin-bottom: 60px; margin-top: 26px;">
-									Секретный <br>
-									подарок
-								</div>
-								<form>
-									<label for="node-3" class="field-label-wait">Введите e-mail</label>
-									<input required type="email" class="pole-form w-input" maxlength="256" name="field-5" data-name="Field 5" placeholder="hello@mail.com" id="field-5" required="">
-									<div class="button-test_form">
-										<div class="text-form_button" style="font-size: 11px;">получить PDF с 5 советами <br> и секретный подарок</div>
-										<input type="submit" value="" data-wait="Please wait..." class="submit-button w-button"><img src="https://gizzaprogger.github.io/project_chicaga/images/607d62634b263d4791390062_gift.png" loading="lazy" style="width: 55px; top: 22px; right: -35px;" alt="gift" class="gift"></div>
-									<div class="text-info_form-politic" style="margin-bottom: 33px; margin-top: 29px;">Нажимая на кнопку "получить PDF <br> с 5 советами и секретный подарок", вы даете согласие на обработку своих персональных данных и соглашаетесь
-										<br>с <a href="#" class="link-politic">Политикой конфиденциальности</a></div>
-									<div style="width: 100%; height: 4px; background: #fff; border-radius: 5px;"></div>
-								</form>
-							</div>
-							<!-- <div class="form_last-step">
+							<div class="form_last-step">
 								<div class="title_form-lbock">Получите ваши подарки прямо сейчас</div>
 								<div class="div-block-bonuses_zentr">
 									<div class="bonuses-1-last-step">
-										<div class="text-capitalize">Гарантированный подарок:</div>
+										<div class="text-capitalize">Гарантированный подарок:</div><img src="https://gizzaprogger.github.io/project_chicaga/images/60915c1050fbf83b24645063_Adjustments.png" loading="lazy" alt="" class="gift-book">
 										<div class="text-dop_gift">Топ-5 советов
 											<br>«Как научиться понимать фильмы на английском»</div>
 									</div>
 									<div class="text-decoratyve">+</div>
 									<div class="bonuses-2-last-step">
-										<div class="text-capitalize">Бонус:</div>
+										<div class="text-capitalize">Бонус:</div><img src="https://gizzaprogger.github.io/project_chicaga/images/609160b3f9f80319055e6fbb_Present.png" loading="lazy" alt="" class="present">
 										<div class="text-dop_gift">Секретный
 											<br>подарок</div>
 									</div>
 								</div>
-								
-							</div> -->
+								<div>
+									<label for="node-3" class="field-label-wait">Введите e-mail</label>
+									<input required type="email" class="pole-form w-input" maxlength="256" name="field-5" data-name="Field 5" placeholder="hello@mail.com" id="field-5" required="">
+									<div class="button-test_form">
+										<div class="text-form_button">получить PDF с 15 советами и секретный подарок</div>
+										<input type="submit" value="" data-wait="Please wait..." class="submit-button w-button"><img src="https://gizzaprogger.github.io/project_chicaga/images/607d62634b263d4791390062_gift.png" loading="lazy" alt="gift" class="gift"></div>
+									<div class="text-info_form-politic">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь
+										<br>с <a href="#" class="link-politic">Политикой конфиденциальности</a></div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -2609,7 +2591,7 @@
 				<div class="block-lbock_form">
 					<div>
 						<div class="block-lbock_video player">
-							<video controls src="" poster="https://gizzaprogger.github.io/project_chicaga/images/605b19076a686a415c04845f/6090404f926dc8403d066315_video_form.jpg" style="display: block; width: 553px; height: 409px;"></video>
+							<video controls src="" style="display: block; width: 553px; height: 409px;"></video>
 							<a href="#" class="pulse link-video-lbock play-pause w-inline-block"></a>
 						</div>
 						<div class="info-block">
