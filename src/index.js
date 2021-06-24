@@ -10,8 +10,13 @@ import SlidersInit from "/src/scripts/slidersInit.js";
 import FormInit from "/src/scripts/sendForm.js";
 import Sound from "/src/scripts/sound_script";
 
+import HTMLVars from "/src/scripts/HTMLVars"
+
+import YmapsInit from "/src/scripts/ymaps"
+
 
 document.addEventListener("DOMContentLoaded", () => {
+  YmapsInit();
   OutherInit();
   Tip.init();
   Video.init();
@@ -46,23 +51,34 @@ document.addEventListener("DOMContentLoaded", () => {
   // })
 
 
-  document.querySelectorAll(".link-next-moduls").forEach(el => {
-    el.addEventListener("click", e => {
-      e.preventDefault();
-      let i = getSlideIndex(".tabs-menu-modules .w--current", ".tab-link-modules", "next");
-      document.querySelectorAll(".tab-link-modules")[i].click()
+  let initTabModules = () => {
+    if (!document.querySelectorAll(".link-next-moduls").forEach) return
+    document.querySelectorAll(".link-next-moduls").forEach(el => {
+      el.addEventListener("click", e => {
+        e.preventDefault();
+        let i = getSlideIndex(".tabs-menu-modules .w--current", ".tab-link-modules", "next");
+        document.querySelectorAll(".tab-link-modules")[i].click()
+      })
     })
-  })
+  }
+  initTabModules();
 
-  document.querySelector(".section-teachers .tab-next").addEventListener("click", () => {
-    let i = getSlideIndex(".section-teachers .w--current", ".tab-link", "next");
-    document.querySelectorAll(".tab-link")[i].click()
-  })
+  (() => {
+    if (!document.querySelector(".section-teachers .tab-next")) return
+    document.querySelector(".section-teachers .tab-next").addEventListener("click", () => {
+      let i = getSlideIndex(".section-teachers .w--current", ".tab-link", "next");
+      document.querySelectorAll(".tab-link")[i].click()
+    })
+  })()
 
-  document.querySelector(".section-teachers .tab-prev").addEventListener("click", () => {
-    let i = getSlideIndex(".section-teachers .w--current", ".tab-link", "back");
-    document.querySelectorAll(".tab-link")[i].click()
-  })
+  let initTabPrev = () => {
+    if (!document.querySelector(".section-teachers .tab-prev")) return
+    document.querySelector(".section-teachers .tab-prev").addEventListener("click", () => {
+      let i = getSlideIndex(".section-teachers .w--current", ".tab-link", "back");
+      document.querySelectorAll(".tab-link")[i].click()
+    })
+  }
+  initTabPrev();
 
   function getSlideIndex(activeSelector, selector, direction) {
       let numElems = document.querySelectorAll(selector).length
@@ -91,6 +107,17 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(el, {
       attributes: true
     })  
+  })
+
+  const urlSearchParams = new URLSearchParams(window.location.search);
+  const params = Object.fromEntries(urlSearchParams.entries());
+  params.vars.split("~").forEach(v => {
+    v = HTMLVars.getArr(v)
+    HTMLVars.insertVar(v[0], v[1]);
+  });
+  params.if.split("~").forEach(v => {
+    v = HTMLVars.getArr(v)
+    HTMLVars.showIf(v[0], v[1])
   })
 
   // document.querySelectorAll(".pulse").forEach(el => {

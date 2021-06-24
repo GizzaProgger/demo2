@@ -1,13 +1,23 @@
 export default () => {
   (() => {
     let oldImgUrl = "";
+    let oldHTML = "";
     if (!document.querySelector(".div-pole-otcritka img")) return;
     document.querySelector(".div-pole-otcritka img").addEventListener("mouseover", e => {
       oldImgUrl = e.target.getAttribute("src");
-      e.target.setAttribute("src", "https://im0-tub-ru.yandex.net/i?id=bde4069236c02909b3fe6ae1e6643c92&n=13&exp=1");
+      oldHTML = e.target.nextElementSibling.innerHTML;
+      e.target.nextElementSibling.innerHTML = "";
+      e.target.nextElementSibling.insertAdjacentHTML("afterbegin", `
+        <div style="text-align: center; font-size: 13px; width: 300px; margin-left: -50px; line-height: 15px;">
+          <strong>Мы вас ждем!</strong> <br>
+          Уберите курсор и записывайтесь!:)
+        </div>
+      `)
+      e.target.setAttribute("src", "../src/assets/images/mark-side.jpg");
     })
     document.querySelector(".div-pole-otcritka img").addEventListener("mouseout", e => {
       e.target.setAttribute("src", oldImgUrl);
+      e.target.nextElementSibling.innerHTML = oldHTML;
     })
   })()
   let date = new Date();
@@ -24,9 +34,23 @@ export default () => {
     return workTime;
   }
   // Установить текущею дату
-  (() => {
-    if (!document.querySelector(".text-field-data"))
+  let setV = () => {
+    if (!document.querySelector(".text-field-data")) return
     document.querySelector(".text-field-data").value = date.toISOString().substring(0, 10); 
+  }
+  setV();
+  (() => {
+    const scalingBody = () => {
+      if (!document.querySelector(".section-header")) return
+      let docWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+      if (docWidth < 991) return
+      let docHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+      let kScaling =  docHeight / 786;
+      kScaling = 0.9 < kScaling && kScaling < 1 ? kScaling : 0.9;
+      document.querySelector(".section-header").style.zoom = kScaling;
+    }
+    document.addEventListener("resize", scalingBody);
+    scalingBody();
   })()
   function setTimeToCallInput(dateStr) {
     if (!document.querySelector("#time")) return;
@@ -94,13 +118,27 @@ export default () => {
   })()
   
   document.querySelectorAll(`[data-date-format]`).forEach(el => {
+    let updateDate = date => {
+      let day = String(date.getDay());
+      let m = String(date.getMonth() + 1);
+      console.log(date.toString())
+      console.log(day, day.length == 1 ? 0 + day : day)
+      let parent = el.parentElement;
+      el.style.position = "relative";
+      el.innerHTML = `${day.length == 1 ? 0 + day : day}.${m.length == 1 ? 0 + m : m}.`;
+      return parent;
+    }
     let date = new Date();
-    let day = String(date.getDay());
-    let m = String(date.getMonth());
-    el.style.position = "relative";
-    el.innerHTML = `${day.length == 1 ? 0 + day : day}.${m.length == 1 ? 0 + m : m}`;
+    let parent = updateDate(date);
     el.insertAdjacentHTML('beforeend', "<input type='date' style='width: 100%; height: 100%; opacity: 0; position: absolute; top: 0; left: 0' />")
+    let input = parent.querySelector("input[type='date']")
+    console.log(input)
+    input.addEventListener("change", () => {
+      updateDate(new Date(input.value))
+      let d = new Date(input.value)
+    })
   });
+
 
   // document.querySelectorAll("[data-date-format]").forEach(el => {
   //   el.addEventListener("change", () => {

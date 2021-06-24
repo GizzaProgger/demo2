@@ -2,6 +2,7 @@
 // @import 'mixins/index';
 // @import 'common/index';
 // @import 'modules/index';
+@import 'common/add.scss';
 
 [data-play-sound] {
   cursor: pointer;
@@ -13,6 +14,103 @@
   display: block;
 }
 .lbock_window-manager {
+
+}
+.quiz-steps {
+  height: 434px;
+}
+.gift-block {
+  margin-top: 25px;
+  background: #3d4058;
+  padding: 17px 9px 21px 9px;
+  color: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  position: relative;
+}
+.gift-block__text {
+  text-align: left;
+  font-weight: 800;
+  font-size: 11px;
+}
+.progressbar-choice_zentr {
+  max-width: 100%;
+}
+.div-selection-form {
+  width: 276px;
+}
+.subtitle-offer {
+  line-height: 18px;
+}
+.map-adult {
   max-height: 95vh;
-  overflow: auto;
+}
+.div-block-offer {
+  height: 158px;
+  margin-top: 43px;
+  min-height: auto;
+}
+.div-map {
+  height: 95vh;
+}
+.sidebar {
+  left: 5vh;
+}
+.messenger-thanks {
+  background-image: none;
+}
+.player {
+  position: relative;
+}
+.title-thanks:first-letter {
+  text-transform: uppercase;
+}
+.number-phone-school {
+  text-decoration: none;
+  color: #fff;
+}
+.block-info .info-contact a {
+  color: #000 ;
+  text-decoration: none;
+}
+html body .info-contact > .tel-red {
+  color:#e03437;
+}
+html body .info-contact > .tel-blue {
+  color: #3b85ee;
+}
+.sel {
+  --round: 3px;
+  padding: 2px 5px;
+  margin: 0 10px 0 0;
+  background:
+    radial-gradient(circle at var(--round) var(--round), #fff4ca calc(var(--round) - 1px), transparent var(--round)),
+    radial-gradient(circle at calc(100% - var(--round)) var(--round), #fff4ca calc(var(--round) - 1px), transparent var(--round)),
+    radial-gradient(circle at calc(100% - var(--round)) calc(100% - var(--round)), #fff4ca calc(var(--round) - 1px), transparent var(--round)),
+    radial-gradient(circle at var(--round) calc(100% - var(--round)), #fff4ca calc(var(--round) - 1px), transparent var(--round)),
+    linear-gradient(to left, transparent var(--round), #fff4ca var(--round), #fff4ca calc(100% - var(--round)), transparent calc(100% - var(--round))),
+    linear-gradient(to top, transparent var(--round), #fff4ca var(--round), #fff4ca calc(100% - var(--round)), transparent calc(100% - var(--round)));
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  border-radius: 3px;
+}
+.sutitle-spec {
+  font-size: 12px;
+  margin-left: 18px;
+  margin-bottom: 10px;
+  margin-top: -13px;
+}
+.list-item-info._3 {
+  margin-bottom: 30px;
+}
+.list-item-info {
+  justify-content: center;
+}
+.spec-caption {
+  margin-top: 15px;
+  font-size: 12px;
+  text-align: center;
 }

@@ -1,0 +1,17 @@
+
+		<form name="email-form-2" data-name="Email Form 2" data-redirect-to="/thank-online.html" data-js-vars="subtitle:Наш специалист свяжется с вами по телефону~title-end:Заявку!~info-text:Он запишет вас на бесплатную консультацию и тестирование.<br>На консультации подберем группу нужного уровня для первого<br>бесплатного пробного занятия и вручим подарок">
+			<label for="node" class="field-label-wait">Как к вам обращаться?</label>
+			<input required type="text" maxlength="256" data-js-var-url="name" data-name="Имя" placeholder="Имя" class="pole-form w-input">
+			<label for="node-2" class="field-label-wait">Введите телефон</label>
+			<input required type="tel" maxlength="256" data-js-var-url="phone" data-name="Телефон" placeholder="Телефон" class="pole-form w-input">
+			<label for="name-3" class="field-label-wait">Выберите школу</label>
+			<select required name="field" data-name="Филиал" class="pole-form w-select"> ${require('./scools-list.html')} </select>
+			<button type="submit" class="button-test_form">
+				<div class="text-form_button">записаться на 3 бесплатных
+					<br>пробных занятия + получить
+					<br>подарок</div> <img src="https://gizzaprogger.github.io/project_chicaga/images/607d62634b263d4791390062_gift.png" loading="lazy" alt="gift" class="gift"> </button>
+			<div class="text-info_form">Нажимая на кнопку «Записаться на 3 бесплатных
+				<br>пробных занятия + получить подарок», вы даете
+				<br>согласие на обработку своих персональных данных
+				<br>и соглашаетесь ﻿с <a href="#" class="link-politic">Политикой конфиденциальности</a></div>
+		</form>
